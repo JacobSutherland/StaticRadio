@@ -107,7 +107,7 @@ span {
     --secondary-border-color: #BDF2D5;
 
     /* units */
-    --header-links: 2.4rem;
+    --header-links: 2rem;
     --logo-size: 4rem;
     --headings-size: 4.8rem;
     --general-font-size: 2.4rem;
@@ -139,11 +139,21 @@ h2 {
     font-size: var(--headings-size);
     color: var(--h2-color);
     border-left: 5px solid black;
+    padding-left: 1rem;
+}
+
+#home h2 {
+    margin: 25rem 0 5rem 5rem;
+    border-color: var(--border-color);
 }
 
 p {
     font-size: var(--general-font-size);
     color: var(--general-font-color);
+}
+
+#home p {
+    margin: 0rem 0 5rem 5rem;
 }
 
 .event-card p {
@@ -157,6 +167,11 @@ p {
 
 .btn {
     font-size: var(--btn-font-size);
+    color: var(--button-font-color);
+    text-align: center;
+    line-height: 4rem;
+    border-radius: 25px;
+    display: inline-block;
 }
 
 button {
@@ -171,7 +186,14 @@ label {
 
 #home {
     background-color: var(--background-color);
+    background-image:url('images/splashImage.png');
     height: 100vh;
+    overflow: hidden;
+}
+
+.home-flex-container {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #home header {
@@ -185,3 +207,21 @@ label {
  line-height: 6rem;
 }
 
+.slogan-button-container {
+    width:40%;
+}
+
+.phone-container {
+    padding: 10rem;
+}
+
+#home .btn {
+    background-color: var(--button-color);
+    height: 4rem;
+    width: 25rem;
+    margin: 0rem 0 5rem 5rem;
+}
+
+.phone {
+    margin-top: 5rem;
+}
