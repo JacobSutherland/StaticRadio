@@ -1,0 +1,187 @@
+/* ============ Index ============ */
+/* 
+1 Resets
+
+2 variables
+
+3 typography
+
+4 layout
+
+ ============ tablet Styles ============
+2.1 variables
+
+3.1 typography
+
+4.1 layout
+
+ ============ mobile styles ============
+
+2.2 varibales -
+
+3.2 typography 
+
+4.2 layout
+
+*/
+
+/* ============ Imports ============ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*========= Resets ========= */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+span {
+    display: block;
+}
+/*========= Variables ========= */
+:root {
+    /*colors*/
+    --logo-color: #5D13E7;
+    --general-font-color: black;
+    --button-font-color: white;
+    --secondary-general-font-color: white;
+    --seconday-button-font-color: black;
+    --h2-color: black;
+    --secondary-h2-color: white;
+    --scrolling-h2-color: #BDF2D5;
+    --button-color: #5D13E7;
+    --secondary-button-color: #BDF2D5;
+    --background-color: #BDF2D5;
+    --seconday-background-color: #5D13E7;
+    --third-background-color: white;
+    --border-color: #5D13E7;
+    --secondary-border-color: #BDF2D5;
+
+    /* units */
+    --header-links: 2.4rem;
+    --logo-size: 4rem;
+    --headings-size: 4.8rem;
+    --general-font-size: 2.4rem;
+    --card-font-size: 2rem;
+    --btn-font-size: 1.6rem;
+}
+
+/*========= Typography ========= */
+html {
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif, 'Times New Roman';
+}
+
+.logo {
+    font-size: var(--logo-size);
+    color: var(--logo-color);
+    font-weight: bold;
+    line-height: 6rem;
+}
+
+.header-nav a {
+    font-size: var(--header-links);
+    color: var(--general-font-color);
+    margin-left: 2rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: var(--headings-size);
+    color: var(--h2-color);
+    border-left: 5px solid black;
+}
+
+p {
+    font-size: var(--general-font-size);
+    color: var(--general-font-color);
+}
+
+.event-card p {
+    font-size: var(--card-font-size);
+}
+
+.scrolling-text  {
+    font-size: var(--headings-size);
+    color: var(--scrolling-h2-color);
+}
+
+.btn {
+    font-size: var(--btn-font-size);
+}
+
+button {
+    font-size: var(--btn-font-size);
+}
+
+label {
+    font-size: var(--general-font-size);
+}
+
+/*========= Layout ========= */
+
+#home {
+    background-color: var(--background-color);
+    height: 100vh;
+}
+
+#home header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    background-color: white;
+}
+
+.header-nav {
+ line-height: 6rem;
+}
+
