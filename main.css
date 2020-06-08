@@ -109,8 +109,8 @@ span {
     /* units */
     --header-links: 2rem;
     --logo-size: 4rem;
-    --headings-size: 4.8rem;
-    --general-font-size: 2.4rem;
+    --headings-size: 4rem;
+    --general-font-size: 2rem;
     --card-font-size: 2rem;
     --btn-font-size: 1.6rem;
     --dates-font-size: 2.2rem;
@@ -126,7 +126,7 @@ html {
     font-size: var(--logo-size);
     color: var(--logo-color);
     font-weight: bold;
-    line-height: 6rem;
+    line-height: 3rem;
 }
 
 a {
@@ -220,7 +220,32 @@ label {
 }
 
 aside p {
-    font-size: 4rem;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#artists h2 {
+    margin-top: 2rem;
+    margin-right: 15rem;
+    border-color: var(--secondary-border-color);
+    color: var(--secondary-general-font-color);
+}
+
+.scrolling-text {
+    font-weight: bold;
+    font-size: 5rem;
+    margin-top: 2rem;
+}
+
+.artists-cta-card p {
+    color: var(--secondary-general-font-color);
+    line-height: 1.5;
+}
+
+.artists-cta-card a {
+    color: var(--seconday-button-font-color);
 }
 /*========= Layout ========= */
 
@@ -239,12 +264,13 @@ aside p {
 #home header {
     display: flex;
     justify-content: space-between;
-    padding: 3rem;
+    padding: 4rem;
     background-color: white;
+    height: 10rem;
 }
 
 .header-nav {
- line-height: 6rem;
+ line-height: 3rem;
 }
 
 .slogan-button-container {
@@ -282,7 +308,7 @@ aside p {
 
 
  i {
-     font-size: 10rem;
+     font-size: 7rem;
      color: white;
      margin-top: 2rem;
      margin-right: 5rem;
@@ -303,7 +329,7 @@ aside p {
  .events-header {
     background-color: var(--background-color);
     background-image: url('images/splashImage.png');
-    height: 25rem;
+    height: 17rem;
     padding: 4rem;
  }
 
@@ -318,28 +344,30 @@ aside p {
  }
 
  .event-card {
-     padding: 5rem;
+     padding: 2rem;
      margin-top: 2rem;
      margin-bottom: 5rem;
      display: flex;
      justify-content: space-evenly;
      align-items: center;
-    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
-    min-height: 20rem;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.40);
+    height: 15rem;
+    min-height: 15rem;
     min-width: 48rem;
     overflow: hidden;
  }
 
  span {
      background-color: grey;
-     height: 15rem;
-     min-width: 15rem;
+     height: 13rem;
+     min-width: 13rem;
      border-radius: 50%;
      margin-right: 2rem;
  }
 
  aside {
      padding: 4rem;
+     
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -352,7 +380,155 @@ aside p {
      margin-top: 5rem;
     background-color: var(--button-color);
     height: 4rem;
-    
+    width: 100%;
+}
+
+.one {
+    background-image: url('images/Kali_Uchis.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.two {
+    background-image: url('images/title_fight.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.three {
+    background-image: url('images/joyce-manor.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.four {
+    background-image: url('images/into-it-over-it.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#artists {
+    padding: 4rem;
+    background-color: var(--seconday-background-color);
+}
+
+#artists header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.artists-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.artists-card {
+    min-height: 30rem;
+    width: 20%;
+    min-width: 30rem;
+    flex-grow: 1;
+    background-color: white;
+    margin: 3rem;
+    border-radius: 10px;
+    padding: 2rem;
+    background-image: url('images/toe.jpg');
+    background-size: cover;
+    color: white;
+}   
+
+.artists-cta-card {
+    background-color: var(--seconday-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-image: unset;
     
 }
 
+.artists-cta-card .btn {
+    background-color: var(--secondary-button-color);
+    width: 100%;
+}
+
+.toe {
+    padding: 3rem;
+    background-image: url('images/toe.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: right;
+    font-size:3rem;
+    font-weight: bold;
+}
+
+.bbng {
+    padding: 3rem;
+    background-image: url('images/bbng2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: right;
+    font-size:3rem;
+    font-weight: bold;
+}
+
+.jpeg {
+    padding: 3rem;
+    background-image: url('images/jpegmafia.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: right;
+    font-size:3rem;
+    font-weight: bold;
+}
+
+.molchat-doma {
+    padding: 3rem;
+    background-image: url('images/molchat_doma.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: right;
+    font-size:3rem;
+    font-weight: bold;
+}
+
+.hawaiian-gremlins {
+    padding: 3rem;
+    background-image: url('images/gremlins.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, .58);
+    color: white;
+    text-align: right;
+    font-size:3rem;
+    font-weight: bold;
+}
+
+.father {
+    padding: 3rem;
+    background-image: url('images/father.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, .58);
+    color: white;
+    text-align: right;
+    font-size:3rem;
+    font-weight: bold;
+}
+
+.q {
+    padding: 3rem;
+    background-image: url('images/school-boy-q.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, .58);
+    color: white;
+    text-align: right;
+    font-size:3rem;
+    font-weight: bold;
+}
