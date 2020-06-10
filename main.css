@@ -155,7 +155,7 @@ h2 {
 }
 
 #home h2 {
-    margin: 25rem 0 5rem 5rem;
+    margin: 15rem 0 5rem 5rem;
     border-color: var(--border-color);
 }
 
@@ -300,7 +300,6 @@ input {
 .home-flex-container {
     display: flex;
     justify-content: space-evenly;
-    height: 100%;
 }
 
 #home header {
@@ -631,6 +630,9 @@ footer i {
 }
 
 /*========= Typography ========= */
+h2 {
+    font-size: var(--headings-size);
+}
 .scrolling-text {
     font-size: 3rem;
 }
@@ -641,10 +643,6 @@ footer i {
 }
 
 /*========= Layout ========= */
-
-#home {
-    height: unset;
-}
 
 .header-nav a{
     display: none;
@@ -729,4 +727,146 @@ footer i {
     margin: 1rem;
 }
 
+}
+
+/*=========  Mobile Styles =========*/
+@media(max-width: 600px){
+
+    /*========= Variables ========= */
+    :root {
+        /*colors*/
+        --logo-color: #5D13E7;
+        --general-font-color: black;
+        --button-font-color: white;
+        --secondary-general-font-color: white;
+        --seconday-button-font-color: black;
+        --h2-color: black;
+        --secondary-h2-color: white;
+        --scrolling-h2-color: #BDF2D5;
+        --button-color: #5D13E7;
+        --secondary-button-color: #BDF2D5;
+        --background-color: #BDF2D5;
+        --seconday-background-color: #5D13E7;
+        --third-background-color: white;
+        --border-color: #5D13E7;
+        --secondary-border-color: #BDF2D5;
+    
+        /* units */
+        --header-links: 2rem;
+        --logo-size: 3rem;
+        --headings-size: 3rem;
+        --general-font-size: 1.8rem;
+        --card-font-size: 2rem;
+        --btn-font-size: 1.6rem;
+        --dates-font-size: 1.2rem;
+        --footer-nav-links: 1.2rem;
+    }
+    
+    /*========= Typography ========= */
+    .logo {
+        font-size: var(--logo-size);
+    }
+    #home h2{
+        font-size: 5rem;
+        margin: 2rem 0 2rem 1rem;
+    }
+
+    #home p {
+        margin :0;
+        margin-left: 1rem;
+    }
+
+    #about p {
+        line-height: 1.5;
+    }
+
+    .event-card p {
+        font-size: var(--dates-font-size);
+    }
+
+    aside p {
+        font-size: var(--general-font-size);
+    }
+    
+    .scrolling-text {
+        border: 2px solid red;
+        width: 100%;
+    }
+    /*========= Layout ========= */
+
+    #home {
+        background-position: 39%;
+    }
+
+
+    #home header {
+        padding: 2rem;
+        padding-top: 4rem;
+        line-height: 9;
+    }
+
+    .phone-container {
+        display: none;
+    }
+
+    .slogan-button-container {
+        width: 100%;
+        text-align: left;
+    }
+
+    .home-flex-container {
+        margin-top: 2rem;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    #home .btn {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 5rem;
+    }
+
+    .about-image {
+        display: none;
+    }
+    
+    .main-about-container {
+        width: 100%;
+    }
+
+    #about i {
+        margin-top:1rem;
+        margin-right: 2rem;
+    }
+
+    #events header {
+        background-position: 95%;
+    }
+
+    .events-cta-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+   
+    .dates-container {
+        padding: 2rem;
+        width: 100%;
+    }
+   
+    .event-card {
+        margin-bottom: 3rem;
+        min-width: 100%;
+    }
+
+    span {
+        min-height: 5rem;
+        min-width: 8rem;
+        height: 8rem;
+        width: 8rem;
+    }
+
+    #artists {
+        overflow: hidden;
+    }
 }
