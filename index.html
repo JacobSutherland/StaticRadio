@@ -12,12 +12,21 @@
         <header>
             <h1 class='logo'>StaticRadio</h1>
             <nav class='header-nav'>
-                <a>Home</a>
-                <a>About</a>
-                <a>Events</a>
-                <a>Artists</a>
-                <a>Sign Up</a>
-                <a>Log In</a>
+                <svg class='drop-down'width="54" height="48" viewBox="0 0 54 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="26" width="28" height="7" fill="#5D5E55"/>
+                    <rect y="21" width="54" height="7" fill="#5D5E55"/>
+                    <rect y="41" width="54" height="7" fill="#5D5E55"/>
+                </svg>
+                <svg class='close-menu' width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="5.08835" y="1.01883" width="96" height="7" transform="rotate(44.8539 5.08835 1.01883)" fill="white"/>
+                        <rect x="68.7278" y="0.856537" width="7" height="96" transform="rotate(44.8539 68.7278 0.856537)" fill="white"/>
+                </svg>                        
+                <a href='#home'>Home</a>
+                <a href='#about'>About</a>
+                <a href='#events'>Events</a>
+                <a href='#artists'>Artists</a>
+                <a href='#sign-up'>Sign Up</a>
+                <a href='logIn.html'>Log In</a>
             </nav>
         </header>
         <div class='home-flex-container'>
@@ -90,7 +99,7 @@
                 </p>
         <!-- </div> -->
         </div>
-        <img class='about-image' src='images/singer.jpeg'>  
+        <img class='about-image' src='images/singer.jpeg' alt='singer'>  
     </section>
     <section id='events'>
         <header class='events-header'>
@@ -183,7 +192,12 @@
         </form>
     </section>
     <footer>
-        <nav class='header-nav'>
+        <div class='icon-container'>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-square"></i>
+        </div>
+        <nav class='footer-nav'>
             <a>Home</a>
             <a>About</a>
             <a>Events</a>

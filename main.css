@@ -114,6 +114,7 @@ span {
     --card-font-size: 2rem;
     --btn-font-size: 1.6rem;
     --dates-font-size: 2.2rem;
+    --footer-nav-links: 1.6rem;
 }
 
 /*========= Typography ========= */
@@ -131,6 +132,7 @@ html {
 
 a {
     cursor: pointer;
+    text-decoration: none;
 }
 
 .header-nav a {
@@ -165,6 +167,7 @@ p {
 #home p {
     margin: 0rem 0 5rem 5rem;
     font-weight: bold;
+    line-height: 2;
 }
 
 .event-card p {
@@ -184,6 +187,8 @@ p {
     border-radius: 25px;
     display: inline-block;
     width: 25rem;
+    background-color: var(--button-color);
+    border: none;
 }
 
 #about h2 {
@@ -223,7 +228,7 @@ aside p {
     font-weight: bold;
     font-size: 3rem;
     line-height: 1.5;
-    text-align: center;
+    text-align: left;
 }
 
 #artists h2 {
@@ -247,7 +252,43 @@ aside p {
 .artists-cta-card a {
     color: var(--seconday-button-font-color);
 }
+
+#sign-up header h2:nth-of-type(1) {
+    border: none;
+}
+
+#sign-up h2 {
+    border-color: var(--border-color);
+    margin-bottom: 5rem;
+}
+
+#sign-up h1 {
+    margin-bottom: 2rem;
+}
+
+input {
+    font-size: 2rem;
+}
+
+.footer-nav a{
+    font-size: var(--footer-nav-links);
+    margin: 1rem;
+    font-weight: bold;
+}
+
+.footer-nav a:hover {
+    border-bottom: 2px solid var(--border-color);
+}
+
 /*========= Layout ========= */
+
+.drop-down {
+    display: none;
+}
+
+.close-menu {
+    display: none;
+}
 
 #home {
     background-color: var(--background-color);
@@ -259,6 +300,7 @@ aside p {
 .home-flex-container {
     display: flex;
     justify-content: space-evenly;
+    height: 100%;
 }
 
 #home header {
@@ -284,7 +326,7 @@ aside p {
 #home .btn {
     background-color: var(--button-color);
     height: 4rem;
-    margin: 0rem 0 5rem 5rem;
+    margin: 0rem 0 10rem 5rem;
 }
 
 .phone {
@@ -310,9 +352,7 @@ aside p {
  i {
      font-size: 7rem;
      color: white;
-     margin-top: 2rem;
      margin-right: 5rem;
-     
  }
 
  .about-image {
@@ -322,14 +362,10 @@ aside p {
      object-fit: cover;
  }
 
- #events {
-     /* height: 100vh; */
- }
-
  .events-header {
     background-color: var(--background-color);
     background-image: url('images/splashImage.png');
-    height: 17rem;
+    height: 15rem;
     padding: 4rem;
  }
 
@@ -357,6 +393,7 @@ aside p {
     overflow: hidden;
  }
 
+
  span {
      background-color: grey;
      height: 13rem;
@@ -367,13 +404,11 @@ aside p {
 
  aside {
      padding: 4rem;
-     
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
      max-width: 30%;
-
  }
 
  aside .btn {
@@ -439,6 +474,16 @@ aside p {
     color: white;
 }   
 
+.artists-card:not(.artists-cta-card){
+    padding: 3rem;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: right;
+    font-size:3rem;
+    font-weight: bold;
+ }
+
 .artists-cta-card {
     background-color: var(--seconday-background-color);
     display: flex;
@@ -465,70 +510,223 @@ aside p {
 }
 
 .bbng {
-    padding: 3rem;
     background-image: url('images/bbng2.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: right;
-    font-size:3rem;
-    font-weight: bold;
 }
 
 .jpeg {
-    padding: 3rem;
     background-image: url('images/jpegmafia.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: right;
-    font-size:3rem;
-    font-weight: bold;
 }
 
 .molchat-doma {
-    padding: 3rem;
     background-image: url('images/molchat_doma.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: right;
-    font-size:3rem;
-    font-weight: bold;
 }
 
 .hawaiian-gremlins {
-    padding: 3rem;
     background-image: url('images/gremlins.jpg');
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(0, 0, 0, .58);
-    color: white;
-    text-align: right;
-    font-size:3rem;
-    font-weight: bold;
 }
 
 .father {
-    padding: 3rem;
     background-image: url('images/father.jpg');
-    background-size: cover;
-    background-position: center;
-    background-color: rgba(0, 0, 0, .58);
-    color: white;
-    text-align: right;
-    font-size:3rem;
-    font-weight: bold;
 }
 
 .q {
-    padding: 3rem;
     background-image: url('images/school-boy-q.jpg');
-    background-size: cover;
+}
+
+
+.sign-up-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('images/zagHeadings.png');
+    background-size:cover;
     background-position: center;
-    background-color: rgba(0, 0, 0, .58);
-    color: white;
+    height: 17rem;
+    padding: 4rem;
+}
+
+form {
+    display: flex;
+    width: 90%;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.40);
+    margin: 5rem auto;
+    padding: 4rem;
+}
+
+
+
+input {
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}
+
+.form-container {
+    width: 50%;
+}
+
+.social-sign-up-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.social-sign-up-container .btn {
+    margin: 2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+    padding: 4rem;
+    height: 15rem;
+    background-color: var(--background-color);
     text-align: right;
-    font-size:3rem;
-    font-weight: bold;
+}
+
+footer i {
+    color: var(--seconday-background-color);
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+/*=========  tablet Styles =========*/
+@media(max-width: 840px){
+
+/*========= Variables ========= */
+:root {
+    /*colors*/
+    --logo-color: #5D13E7;
+    --general-font-color: black;
+    --button-font-color: white;
+    --secondary-general-font-color: white;
+    --seconday-button-font-color: black;
+    --h2-color: black;
+    --secondary-h2-color: white;
+    --scrolling-h2-color: #BDF2D5;
+    --button-color: #5D13E7;
+    --secondary-button-color: #BDF2D5;
+    --background-color: #BDF2D5;
+    --seconday-background-color: #5D13E7;
+    --third-background-color: white;
+    --border-color: #5D13E7;
+    --secondary-border-color: #BDF2D5;
+
+    /* units */
+    --header-links: 2rem;
+    --logo-size: 4rem;
+    --headings-size: 4rem;
+    --general-font-size: 2rem;
+    --card-font-size: 2rem;
+    --btn-font-size: 1.6rem;
+    --dates-font-size: 2.2rem;
+    --footer-nav-links: 1.2rem;
+}
+
+/*========= Typography ========= */
+.scrolling-text {
+    font-size: 3rem;
+}
+
+.sign-up-header h2 {
+    text-align: center;
+    line-height: 1.5;
+}
+
+/*========= Layout ========= */
+
+#home {
+    height: unset;
+}
+
+.header-nav a{
+    display: none;
+}
+
+.drop-down {
+    display: block;
+    margin: -1rem;
+}
+
+.close-menu {
+    display: none;
+}
+
+.events-header {
+    height: 15%;
+}
+
+.events-cta-container {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-card {
+    width: 90%;
+}
+
+.dates-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+aside {
+    max-width: unset;
+    width: 100%;
+}
+
+aside .btn {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 100%;
+}
+
+.artists-card-container {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+ .artists-card {
+    height: 40rem;
+    width: 100%;
+    margin: 0 0 3rem 0;
+} 
+
+form {
+    flex-direction: column;
+}
+
+.form-container {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
+
+form .btn {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.social-sign-up-container{
+    width: 100%;
+}
+
+footer i {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
 }
