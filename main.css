@@ -1,27 +1,28 @@
 /* ============ Index ============ */
 /* 
-1 Resets
+1 Resets - line 31
 
-2 variables
+2 variables line - 90
 
-3 typography
+3 typography line - 120 
 
-4 layout
+4 layout - line 283
 
  ============ tablet Styles ============
-2.1 variables
 
-3.1 typography
+2.1 variables - line 592
 
-4.1 layout
+3.1 typography - line 595
 
- ============ mobile styles ============
+4.1 layout - line 638
 
-2.2 varibales -
+ ============ mobile styles ============ - line 725
 
-3.2 typography 
+2.2 varibales - line 728
 
-4.2 layout
+3.2 typography - line 758
+
+4.2 layout - line 799
 
 */
 
@@ -288,6 +289,10 @@ input {
 
 .close-menu {
     display: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 #home {
@@ -793,6 +798,10 @@ footer i {
     label {
         font-size: var(--general-font-size);
     }
+
+    .footer-nav a {
+        text-decoration: none;
+    }
     
     /*========= Layout ========= */
 
@@ -885,7 +894,9 @@ footer i {
     }
 
     .artists-cta-card{
-        margin-top: 0;
+        flex-grow: 0;
+        height: 3rem;
+        padding: 0rem;
     }
 
     .sign-up-header {
