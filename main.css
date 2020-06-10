@@ -479,7 +479,7 @@ input {
     background-position: center;
     color: white;
     text-align: right;
-    font-size:3rem;
+    font-size:2rem;
     font-weight: bold;
  }
 
@@ -498,14 +498,7 @@ input {
 }
 
 .toe {
-    padding: 3rem;
     background-image: url('images/toe.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: right;
-    font-size:3rem;
-    font-weight: bold;
 }
 
 .bbng {
@@ -787,11 +780,20 @@ footer i {
     aside p {
         font-size: var(--general-font-size);
     }
-    
-    .scrolling-text {
-        border: 2px solid red;
-        width: 100%;
+
+    .artists-card {
+        font-size: var(--general-font-size);
     }
+
+    .artists-header h2 {
+        width: 100%;
+        align-self: flex-start;
+    }
+
+    label {
+        font-size: var(--general-font-size);
+    }
+    
     /*========= Layout ========= */
 
     #home {
@@ -868,5 +870,42 @@ footer i {
 
     #artists {
         overflow: hidden;
+        padding: 2rem;
     }
+
+    .artists-header {
+        flex-direction: column;
+        padding: 2rem;
+
+    }
+
+    .artists-card {
+        min-width: 100%;
+
+    }
+
+    .artists-cta-card{
+        margin-top: 0;
+    }
+
+    .sign-up-header {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    form {
+        padding: 2rem;
+    }
+
+    .footer-nav {
+        margin-top: -4rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-nav a {
+        font-size: 1rem;
+        margin: .5rem;
+    }
+
 }
