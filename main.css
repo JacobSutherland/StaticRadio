@@ -136,6 +136,10 @@ a {
     text-decoration: none;
 }
 
+/* a:visited {
+    color: unset;
+} */
+
 .header-nav a {
     font-size: var(--header-links);
     color: var(--general-font-color);
@@ -920,3 +924,25 @@ footer i {
     }
 
 }
+
+/*=========  Login Styles =========*/
+
+/*========= typograpghy =========*/
+#login h2 {
+    margin-bottom: 5rem;
+    border-color: var(--border-color);
+}
+
+/*=========  Layout =========*/
+#login {
+    overflow: hidden;
+}
+
+
+#login header {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    height: 10rem;
+}
+
