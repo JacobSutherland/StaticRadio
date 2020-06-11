@@ -295,9 +295,9 @@ input {
     display: none;
 }
 
-html {
+/* html {
     scroll-behavior: smooth;
-}
+} */
 
 #home {
     background-color: var(--background-color);
@@ -944,5 +944,6 @@ footer i {
     padding: 4rem;
     height: 10rem;
     margin-bottom: 7%;
+    scroll-behavior: unset;
 }
 
