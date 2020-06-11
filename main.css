@@ -938,11 +938,11 @@ footer i {
     overflow: hidden;
 }
 
-
 #login header {
     display: flex;
     justify-content: space-between;
     padding: 4rem;
     height: 10rem;
+    margin-bottom: 7%;
 }
 
